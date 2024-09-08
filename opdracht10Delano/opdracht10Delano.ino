@@ -1,5 +1,9 @@
-// Huiswerk Opdacht 10
-// Delano Koster 5035007
+/* 
+Huiswerk Opdacht 11
+Delano Koster 5035007
+
+08-09-24
+*/
 
 int led1 = 8;
 int led2 = 9;
