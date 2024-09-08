@@ -14,7 +14,7 @@ void setup() {
 
 void loop() {
   if (done == false) {  // makes sure this function only runs once
-    for (int i = 0; i < 100; i++) {
+    for (int i = 0; i <= 100; i++) {
       if (i % 2 == 0) { // checks if i is even
         delay(50);  // makes sure the text is readable
         Serial.print(i);
