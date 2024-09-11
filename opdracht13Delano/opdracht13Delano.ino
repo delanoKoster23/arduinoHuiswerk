@@ -6,6 +6,7 @@ Delano Koster 5035007
 */
 
 const int analogIn0 = A0;
+const int ledPin = 5;
 
 void setup() {
   pinMode(analogIn0, INPUT);
@@ -15,5 +16,8 @@ void setup() {
 void loop() {
   int potValue = analogRead(analogIn0);
   Serial.println(potValue);
-  delay(100);
+  digitalWrite(ledPin, HIGH);
+  delay(potValue);
+  digitalWrite(ledPin, LOW);
+  delay(potValue);
 }
