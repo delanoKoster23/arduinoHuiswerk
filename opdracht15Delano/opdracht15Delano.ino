@@ -1,3 +1,9 @@
+/*Huiswerk Opdacht 15
+Delano Koster 5035007
+
+11-09-24
+*/
+
 const int servoPin = 5;
 const int sonicTrig = 11;
 const int sonicEcho = 12;
@@ -24,7 +30,7 @@ void loop()
 }
 
 
-void USSensor() {
+int USSensor() {
   digitalWrite(sonicTrig, LOW);
   delayMicroseconds(2);
 
@@ -36,4 +42,5 @@ void USSensor() {
   distance = duration * 34 / 2000;
   Serial.println(distance);
   delay(250);
+  return distance;
 }
